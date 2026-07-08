@@ -8829,7 +8829,7 @@ function _cappedWarnHTML(cap){
   // iOS ceiling and CANNOT go deeper on this device. The desktop "Keep searching (x3)" / "Search to
   // the end" buttons would just re-run at the same clamped 8M and re-cap immediately (a confusing
   // no-op loop), so they're removed here. Only an honest explanation + dismiss remains.
-  return '<div class="note" style="border-color:var(--warn);margin-bottom:10px"><b>\\u26a0 Search capped at '+(cap/1000000)+'M nodes (iOS ceiling)</b> \\u2014 this is the best lineup found within the limit. Searching deeper isn\\u2019t supported on iOS yet (it would risk crashing Safari), so a larger or complete search isn\\u2019t available in this build. On most drafts the solver finishes well under this and the result is fully optimal; only unusually large pools reach the cap.'
+  return '<div class="note" style="border-color:var(--warn);margin-bottom:10px"><b>\u26a0 Search capped at '+(cap/1000000)+'M nodes (iOS ceiling)</b> \u2014 this is the best lineup found within the limit. Searching deeper isn\u2019t supported on iOS yet (it would risk crashing Safari), so a larger or complete search isn\u2019t available in this build. On most drafts the solver finishes well under this and the result is fully optimal; only unusually large pools reach the cap.'
     +'<div class="row" style="margin-top:8px;gap:8px;flex-wrap:wrap">'
     +'<button class="btn gho sm" onclick="this.closest(\'.note\').remove()">Accept this result</button>'
     +'</div>'+_poolSizeWarning()+'</div>';
